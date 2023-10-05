@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            font-size: 3rem;
+            background: silver;
+            color: black;
+        }
+        #breakpoint-info::after {
+            content: "breakpoint do 576px";
+        }
+        @media (min-width: 576px) {
+            #breakpoint-info::after {
+                content: "breakpoint 576px lub więcej";
+            }
+            body {
+                background: aqua;
+            }
+        }
+        @media (min-width: 768px) {
+            #breakpoint-info::after {
+                content: "breakpoint 768px lub więcej";
+            }
+            body {
+                background: lightgreen;
+            }
+        }
+        @media (min-width: 992px) {
+            #breakpoint-info::after {
+                content: "breakpoint 992px lub więcej";
+            }
+            body {
+                background: yellow;
+            }
+        }
+        @media (min-width: 1200px) {
+            #breakpoint-info::after {
+                content: "breakpoint 1200px lub więcej";
+            }
+            body {
+                background: orange;
+            }
+        }
+        @media (min-width: 1400px) {
+            #breakpoint-info::after {
+                content: "breakpoint 1400px lub więcej";
+            }
+            body {
+                background: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span id="breakpoint-info"></span>
+</body>
+</html>
